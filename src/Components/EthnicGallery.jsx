@@ -1,17 +1,12 @@
 import React, { useState } from "react";
-import "./EthnicDesigns.css";
+import "./EthnicGallery.css";
 
-function EthnicDesigns() {
-
-  const [category, setCategory] = useState("All");
-  const [selectedDress, setSelectedDress] = useState(null);
-
-  const EthnitDesigns=[
+  const ethnicProducts=[
     {
       id: 1,
       name: "Simple Lehenga",
-      category: "Lehenga",
       description: "Beautiful and eligent.",
+      price:"₹2,499",
       image: "/Images/EthnicWear1.jpeg"
     },
     {
@@ -19,6 +14,7 @@ function EthnicDesigns() {
       name: "Elegance Lehenga",
       category: "Lehenga",
       description: "beautiful traditional lehenga, featuring a rich mustard yellow",
+      price:"₹2,499",
       image: "/Images/EthnicWear2.jpeg"
     },
     {
@@ -26,6 +22,7 @@ function EthnicDesigns() {
       name: "Royal Rani Red Lehenga",
       category: "Lehenga",
       description: "A gorgeous lehenga Perfect for weddings, receptions",
+      price:"₹2,499",
       image: "/Images/EthnicWear3.jpeg"
     },
     {
@@ -33,6 +30,7 @@ function EthnicDesigns() {
       name: "Sage Green Elegance Suit",
       category: "Salwar Suits",
       description: "green straight-cut kurti set featuring delicate embroidery",
+      price:"₹2,499",
       image: "/Images/EthnicWear4.jpeg"
     },
     {
@@ -40,6 +38,7 @@ function EthnicDesigns() {
       name: "Rani Red Ethnic Suit",
       category: "Punjabi Suits",
       description: "A stunning red Punjabi suit and a beautiful flowy dupatta",
+      price:"₹2,499",
       image: "/Images/EthnicWear5.jpeg"
     },
     {
@@ -47,6 +46,7 @@ function EthnicDesigns() {
       name: "Royal Purple Floral Suit",
       category: "Salwar Suits",
       description: "floral printed palazzo pants ,printed dupatta with traditional borders.",
+      price:"₹2,499",
       image: "/Images/EthnicWear6.jpeg"
     },
     {
@@ -54,6 +54,7 @@ function EthnicDesigns() {
       name: "Turquoise Elegance Suit",
       category: "Salwar Suits",
       description: "Elegant turquoise suit with printed dupatta and palazzo.",
+      price:"₹2,499",
       image: "/Images/EthnicWear7.jpeg"
     },
     {
@@ -61,6 +62,7 @@ function EthnicDesigns() {
       name: "Sunehri Phool Anarkali",
       category: "Anarkali Suits",
       description: "Floral embroidered mustard suit with matching dupatta.",
+      price:"₹2,499",
       image: "/Images/EthnicWear8.jpeg"
     },
     {
@@ -68,6 +70,7 @@ function EthnicDesigns() {
       name: "Lime Blossom Anarkali",
       category: "Anarkali Suits",
       description: "Elegant floral embroidery with delicate lace detailing.",
+      price:"₹2,499",
       image: "/Images/EthnicWear9.jpeg"
     },
     {
@@ -75,6 +78,7 @@ function EthnicDesigns() {
       name: "Gulabi Garden Suit",
       category: "Salwar Suits",
       description: "Beautiful floral embroidery with matching dupatta.",
+      price:"₹2,499",
       image: "/Images/EthnicWear10.jpeg"
     },
     {
@@ -82,6 +86,7 @@ function EthnicDesigns() {
       name: "Blue Blossom Suit",
       category: "Salwar Suits",
       description: "Sky blue fabric with floral embroidery.",
+      price:"₹2,499",
       image: "/Images/EthnicWear11.jpeg"
     },
     {
@@ -89,6 +94,7 @@ function EthnicDesigns() {
       name: "Emerald Grace Anarkali",
       category: "Anarkali Suits",
       description: "Royal green suit with golden embroidery.",
+      price:"₹2,499",
       image: "/Images/EthnicWear12.jpeg"
     },
     {
@@ -96,6 +102,7 @@ function EthnicDesigns() {
       name: "Rust Royale Anarkali",
       category: "Anarkali Suits",
       description: "Elegant rust outfit with delicate embroidery.",
+      price:"₹2,499",
       image: "/Images/EthnicWear13.jpeg"
     },
     {
@@ -103,6 +110,7 @@ function EthnicDesigns() {
       name: "Cream White Suit",
       category: "Salwar Suits",
       description: "A gorgeous suit",
+      price:"₹2,499",
       image: "/Images/EthnicWear14.jpeg"
     },
     {
@@ -110,6 +118,7 @@ function EthnicDesigns() {
       name: "mint green suit",
       category: "Salwar Suits",
       description: "Printed mint green suit with matching dupatta.",
+      price:"₹2,499",
       image: "/Images/EthnicWear15.jpeg"
     },
     {
@@ -117,138 +126,55 @@ function EthnicDesigns() {
       name: "Lavender Elegance",
       category: "Salwar Suits",
       description: "Graceful woman wearing a lavender traditional outfit.",
+      price:"₹2,499",
       image: "/Images/EthnicWear16.jpeg"
     }
   ];
-  const ethnicCategories = [
-    "All",
-    "Salwar Suits",
-    "Anarkali Suits",
-    "Lehenga"
-  ];
-  const filteredEthnic =
-    category === "All"
-      ? EthnicDesigns
-      : EthnicDesigns.filter(
-          (dress) => dress.category === category
-        );
-    
-    const whatsappNumber = "918263874680";
-
+  function EthnicGallery(){
     return (
     <section className="ethnic-gallery" id="ethnic-gallery">
 
-      <div className="gallery-heading">
-        <p>OUR EXCLUSIVE COLLECTION</p>
-        <h2>Beautiful Ethnic Designs</h2>
-        <span>
-          Choose your favourite ethinic designs and get it
-          customized at Varnikaa.
-        </span>
+       <div className="ethnic-heading">
+        <span>TRADITIONAL COLLECTION</span>
+        <h2>Ethnic Wear Collection</h2>
+        <p>
+          Discover beautiful ethnic styles that celebrate
+          tradition, elegance and timeless fashion.
+        </p>
       </div>
-
-      {/* Category Filters */}
-
-      <div className="category-buttons">
-        {categories.map((item) => (
-          <button
-            key={item}
-            className={category === item ? "active" : ""}
-            onClick={() => setCategory(item)}
-          >
-            {item}
-          </button>
-        ))}
-      </div>
-
-      {/* Dress Cards */}
 
       <div className="ethnic-grid">
+        {ethnicProducts.map((product) => (
+          <div className="ethnic-card" key={product.id}>
 
-        {filteredBlouses.map((ethnic) => (
-
-          <div className="ethnic-card" key={ethnic.id}>
-
-            <img
-              src={ethnic.image}
-              alt={ethnic.name}
-            />
-
-            <div className="ethnic-info">
-
-              <p className="ethnic-category">
-                {ethnic.category}
-              </p>
-
-              <h3>{ethnic.name}</h3>
-
-              <p>{ethnic.description}</p>
-
-              <button
-                className="details-btn"
-                onClick={() => setSelectedDress(ethnic)}
-              >
-                View Details
-              </button>
-
-              <a
-                className="whatsapp-btn"
-                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-                  `Hello Varnikaa, I am interested in ${blouse.name} design. Please share stitching details.`
-                )}`}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Enquire on WhatsApp
-              </a>
-
+            <div className="ethnic-image">
+              <img
+                src={product.image}
+                alt={product.name}
+              />
             </div>
-          </div>
+            <div className="ethnic-info">
+              <h3>{product.name}</h3>
+              <p>{product.description}</p>
+              <h4>{product.price}</h4>
 
+              <a href={`https://wa.me/918283874680?text=${encodeURIComponent(
+                `Hello, I am interested in ${product.name}. Please share more details.`
+                 )}`}
+                className="ethnic-btn"
+                 target="_blank"
+                rel="noopener noreferrer"
+              >
+               Enquire Now
+              </a>
+            </div>
+
+          </div>
         ))}
-
       </div>
-
-      {/* Details Popup */}
-
-      {selectedDress && (
-        <div className="modal-overlay">
-
-          <div className="ethnic-modal">
-
-            <button
-              className="close-btn"
-              onClick={() => setSelectedDress(null)}
-            >
-              ×
-            </button>
-
-            <img
-              src={selectedDress.image}
-              alt={selectedBDress.name}
-            />
-
-            <h2>{selectedDress.name}</h2>
-
-            <p>{selectedDress.description}</p>
-
-            <p>
-              Category: {selectedDress.category}
-            </p>
-
-            <button
-              className="details-btn"
-              onClick={() => setSelectedDress(null)}
-            >
-              Close
-            </button>
-
-          </div>
-        </div>
-      )}
 
     </section>
   );
 }
 
-export default EthnicDesigns;
+export default EthnicGallery;

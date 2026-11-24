@@ -6,11 +6,11 @@ import Navbar from "./Navbar";
 import sareeImage from "./assets/sareeImage.png";
 import kurtiImage from "./assets/kurtiImage.png";
 
-import BlouseDesigns from "./Pages/BlouseDesigns";
-
 import "./App.css";
 
-import EthnicDesigns from "./Components/EthnicGallery";
+import BlouseDesigns from "./Pages/BlouseDesigns";
+import EthnicDesigns from "./Pages/EthnicDesigns";
+import SareeDesigns from "./Pages/SareeDesigns";
 
 function Home() {
 
@@ -98,39 +98,48 @@ Beautiful customized blouse stitching.
 
 {/* Ethnic Wear */}
 
+
 <div className="category-card">
-<Link
-            to="/ethnic-designs"
-            className="category-card"
-          ></Link>
-<img
-              src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600"
-              alt="Traditional clothing"
-            />
 
-<h3>Ethnic Wear</h3>
+  <Link
+    to="/ethnic-designs"
+    className="category-link"
+  >
+    <img
+      src="/Images/EthnicWear5.jpeg"
+      alt="Traditional clothing"
+    />
 
-<p>
-Elegant traditional outfits.
-</p>
+    <h3>Ethnic Wear</h3>
+
+    <p>
+      Elegant traditional outfits.
+    </p>
+
+  </Link>
 
 </div>
+
 
 {/* Saree Collection */}
 
 <div className="category-card">
 
-<img
-              src={sareeImage}
-              alt="Sarees"
-            />
+<Link
+    to="/saree-designs"
+    className="category-navigation"
+  >
+    <img
+      src="/Images/EthnicWear5.jpeg"
+      alt="Saree collection"
+    />
 
 <h3>Saree Collection</h3>
 
 <p>
 Explore beautiful saree styles.
 </p>
-
+</Link>
 </div>
 
 {/* Kurti Collection */}
@@ -306,7 +315,16 @@ element={<Home />}
 path="/blouse-designs"
 element={<BlouseDesigns />}
 />
+{/*Ethnic Wear page*/}
+<Route
+  path="/ethnic-designs"
+  element={<EthnicDesigns />}
+  />
 
+  <Route
+    path="/saree-designs"
+    element={<SareeDesigns />}
+  />
 </Routes>
 
 </BrowserRouter>

@@ -292,3 +292,45 @@ footer p {
   color: inherit;
   cursor: pointer;
 }
+
+.category-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-link img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.category-link h3,
+.category-link p {
+  text-align: center;
+}
+.category-navigation {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.category-navigation {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-navigation img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.category-navigation h3,
+.category-navigation p {
+  text-align: center;
+}
