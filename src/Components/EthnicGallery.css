@@ -1,0 +1,200 @@
+
+.ethnic-gallery{
+  padding: 75px 7%;
+  background: #fffaf6;
+}
+
+.gallery-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.gallery-heading p {
+  color: #a04e62;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.gallery-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: #762f43;
+  margin: 15px 0;
+}
+
+.gallery-heading span {
+  color: #766367;
+}
+
+/* Category buttons */
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.category-buttons button {
+  padding: 11px 22px;
+  border: 1px solid #762f43;
+  background: white;
+  color: #762f43;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-buttons button:hover,
+.category-buttons button.active {
+  background: #762f43;
+  color: white;
+}
+
+/* Gallery cards */
+
+.ethnic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.ethnic-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #00000012;
+  transition: 0.3s;
+}
+
+.ethnic-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px #00000020;
+}
+
+.ethnic-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.ethnic-info {
+  padding: 20px;
+}
+
+.ethnic-category {
+  color: #a04e62;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.ethnic-info h3 {
+  color: #762f43;
+  margin: 10px 0;
+}
+
+.ethnic-info p {
+  color: #766367;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.details-btn,
+.whatsapp-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.details-btn {
+  background: #762f43;
+  color: white;
+  border: none;
+}
+
+.whatsapp-btn {
+  background: #e9f5eb;
+  color: #23783c;
+}
+
+/* Details popup */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000000a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.ethnic-modal {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  text-align: center;
+}
+
+.ethnic-modal img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.ethnic-modal h2 {
+  color: #762f43;
+  margin: 15px 0;
+}
+
+.ethnic-modal p {
+  margin: 10px 0;
+  color: #766367;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 28px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  color: #762f43;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+  .ethnic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ethnic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-heading h2 {
+    font-size: 28px;
+  }
+
+  .ethnic-card img {
+    height: 300px;
+  }
+}
