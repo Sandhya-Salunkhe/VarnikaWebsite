@@ -11,6 +11,7 @@ import "./App.css";
 import BlouseDesigns from "./Pages/BlouseDesigns";
 import EthnicDesigns from "./Pages/EthnicDesigns";
 import SareeDesigns from "./Pages/SareeDesigns";
+import KurtiDesigns from "./Pages/KurtiDesigns";
 
 function Home() {
 
