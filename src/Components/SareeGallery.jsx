@@ -4,130 +4,130 @@ import "./SareeGallery.css";
   const sareeProducts=[
     {
       id: 1,
-      name: "Simple Lehenga",
-      description: "Beautiful and eligent.",
+      name: "Royal Blue & Magenta Saree",
+      description: "Royal blue blouse paired with magenta elegance",
       price:"₹2,499",
-      image: "/Images/EthnicWear1.jpeg"
+      image: "/Images/SareeImage1.jpeg"
     },
     {
       id: 2,
-      name: "Elegance Lehenga",
+      name: "Maroon Gold Border Saree",
       category: "Lehenga",
-      description: "beautiful traditional lehenga, featuring a rich mustard yellow",
+      description: "Deep maroon drape with golden zari detailing",
       price:"₹2,499",
-      image: "/Images/EthnicWear2.jpeg"
+      image: "/Images/SareeImage2.jpeg"
     },
     {
       id: 3,
-      name: "Royal Rani Red Lehenga",
+      name: "	Emerald Green Floral Saree",
       category: "Lehenga",
-      description: "A gorgeous lehenga Perfect for weddings, receptions",
+      description: "Emerald green silk with rich floral brocade",
       price:"₹2,499",
-      image: "/Images/EthnicWear3.jpeg"
+      image: "/Images/SareeImage3.jpeg"
     },
     {
       id: 4,
-      name: "Sage Green Elegance Suit",
+      name: "Purple Gold Brocade Saree",
       category: "Salwar Suits",
-      description: "green straight-cut kurti set featuring delicate embroidery",
+      description: "Purple silk saree adorned with golden artistry",
       price:"₹2,499",
-      image: "/Images/EthnicWear4.jpeg"
+      image: "/Images/SareeImage4.jpeg"
     },
     {
       id: 5,
-      name: "Rani Red Ethnic Suit",
+      name: "Teal Blue Minimal Saree",
       category: "Punjabi Suits",
-      description: "A stunning red Punjabi suit and a beautiful flowy dupatta",
+      description: "Teal blue drape with sleek modern elegance",
       price:"₹2,499",
-      image: "/Images/EthnicWear5.jpeg"
+      image: "/Images/SareeImage5.jpeg"
     },
     {
       id: 6,
-      name: "Royal Purple Floral Suit",
+      name: "Midnight Blue Golden Pallu Saree",
       category: "Salwar Suits",
-      description: "floral printed palazzo pants ,printed dupatta with traditional borders.",
+      description: "Navy saree featuring a lustrous golden pallu",
       price:"₹2,499",
-      image: "/Images/EthnicWear6.jpeg"
+      image: "/Images/SareeImage6.jpeg"
     },
     {
       id: 7,
-      name: "Turquoise Elegance Suit",
+      name: "Peacock Blue Green Saree",
       category: "Salwar Suits",
-      description: "Elegant turquoise suit with printed dupatta and palazzo.",
+      description: "Blue green saree with contrasting royal accents",
       price:"₹2,499",
-      image: "/Images/EthnicWear7.jpeg"
+      image: "/Images/SareeImage7.jpeg"
     },
     {
       id: 8,
-      name: "Sunehri Phool Anarkali",
+      name: "	Champagne Scalloped Saree",
       category: "Anarkali Suits",
-      description: "Floral embroidered mustard suit with matching dupatta.",
+      description: "Champagne saree with delicate shimmer and scallops.",
       price:"₹2,499",
-      image: "/Images/EthnicWear8.jpeg"
+      image: "/Images/SareeImage8.jpeg"
     },
     {
       id: 9,
-      name: "Lime Blossom Anarkali",
+      name: "Violet Floral Saree",
       category: "Anarkali Suits",
-      description: "Elegant floral embroidery with delicate lace detailing.",
+      description: "Violet saree with floral lavender blouse accents.",
       price:"₹2,499",
-      image: "/Images/EthnicWear9.jpeg"
+      image: "/Images/SareeImage9.jpeg"
     },
     {
       id: 10,
-      name: "Gulabi Garden Suit",
+      name: "Pink Gold Banarasi Saree",
       category: "Salwar Suits",
-      description: "Beautiful floral embroidery with matching dupatta.",
+      description: "Vibrant pink silk with intricate golden brocade",
       price:"₹2,499",
-      image: "/Images/EthnicWear10.jpeg"
+      image: "/Images/SareeImage10.jpeg"
     },
     {
       id: 11,
-      name: "Blue Blossom Suit",
+      name: "Ivory Mustard Border Saree",
       category: "Salwar Suits",
-      description: "Sky blue fabric with floral embroidery.",
+      description: "Ivory saree with graceful mustard gold borders",
       price:"₹2,499",
-      image: "/Images/EthnicWear11.jpeg"
+      image: "/Images/SareeImage11.jpeg"
     },
     {
       id: 12,
-      name: "Emerald Grace Anarkali",
+      name: "	Ruby Red Gold Motif Saree",
       category: "Anarkali Suits",
-      description: "Royal green suit with golden embroidery.",
+      description: "Classic red saree with rich gold detailing.",
       price:"₹2,499",
-      image: "/Images/EthnicWear12.jpeg"
+      image: "/Images/SareeImage12.jpeg"
     },
     {
       id: 13,
-      name: "Rust Royale Anarkali",
+      name: "Teal Green Gold Butti Saree",
       category: "Anarkali Suits",
-      description: "Elegant rust outfit with delicate embroidery.",
+      description: "Teal green silk with traditional gold motifs",
       price:"₹2,499",
-      image: "/Images/EthnicWear13.jpeg"
+      image: "/Images/SareeImage13.jpeg"
     },
     {
       id: 14,
-      name: "Cream White Suit",
+      name: "Pastel Green Floral Saree",
       category: "Salwar Suits",
-      description: "A gorgeous suit",
+      description: "Pastel green floral drape with scalloped borders",
       price:"₹2,499",
-      image: "/Images/EthnicWear14.jpeg"
+      image: "/Images/SareeImage14.jpeg"
     },
     {
       id: 15,
-      name: "mint green suit",
+      name: "Black Scalloped Saree",
       category: "Salwar Suits",
-      description: "Printed mint green suit with matching dupatta.",
+      description: "Black saree featuring elegant scalloped silver embellishments",
       price:"₹2,499",
-      image: "/Images/EthnicWear15.jpeg"
+      image: "/Images/SareeImage15.jpeg"
     },
     {
       id: 16,
-      name: "Lavender Elegance",
+      name: "Pink saree",
       category: "Salwar Suits",
-      description: "Graceful woman wearing a lavender traditional outfit.",
+      description: "Graceful woman wearing",
       price:"₹2,499",
-      image: "/Images/EthnicWear16.jpeg"
+      image: "/Images/SareeImage16.jpeg"
     }
   ];
   function SareeGallery(){

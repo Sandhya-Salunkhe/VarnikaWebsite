@@ -1,29 +1,29 @@
 
-.saree-gallery {
+.kurti-gallery {
   padding: 70px 8%;
   background-color: #fffaf6;
 }
 
-.saree-heading {
+.kurti-heading {
   text-align: center;
   margin-bottom: 45px;
 }
 
-.saree-heading span {
+.kurti-heading span {
   color: #a36b52;
   font-size: 13px;
   letter-spacing: 3px;
   font-weight: 600;
 }
 
-.saree-heading h2 {
+.kurti-heading h2 {
   font-size: 36px;
   color: #40251d;
   margin: 12px 0;
   font-family: Georgia, serif;
 }
 
-.saree-heading p {
+.kurti-heading p {
   color: #777;
   font-size: 15px;
   max-width: 550px;
@@ -31,13 +31,13 @@
   line-height: 1.7;
 }
 
-.saree-grid {
+.kurti-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
 }
 
-.saree-card {
+.kurti-card {
   background: white;
   border-radius: 8px;
   overflow: hidden;
@@ -45,50 +45,50 @@
   transition: transform 0.3s ease;
 }
 
-.saree-card:hover {
+.kurti-card:hover {
   transform: translateY(-8px);
 }
 
-.saree-image {
+.kurti-image {
   width: 100%;
   height: 330px;
   overflow: hidden;
 }
 
-.saree-image img {
+.kurti-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
 
-.saree-card:hover .saree-image img {
+.kurti-card:hover .kurti-image img {
   transform: scale(1.06);
 }
 
-.saree-info {
+.kurti-info {
   padding: 18px;
   text-align: center;
 }
 
-.saree-info h3 {
+.kurti-info h3 {
   color: #40251d;
   font-size: 18px;
   margin-bottom: 8px;
 }
 
-.saree-info p {
+.kurti-info p {
   color: #888;
   font-size: 13px;
 }
 
-.saree-info h4 {
+.kurti-info h4 {
   color: #a36b52;
   font-size: 17px;
   margin: 12px 0;
 }
 
-.saree-btn {
+.kurti-btn {
   background: #704638;
   color: white;
   border: none;
@@ -98,30 +98,30 @@
   transition: 0.3s;
 }
 
-.saree-btn:hover {
+.kurti-btn:hover {
   background: #40251d;
 }
 
 @media (max-width: 1000px) {
-  .saree-grid {
+  .kurti-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 550px) {
-  .saree-grid {
+  .kurti-grid {
     grid-template-columns: 1fr;
   }
 
-  .saree-heading h2 {
+  .kurti-heading h2 {
     font-size: 27px;
   }
 
-  .saree-image {
+  .kurti-image {
     height: 350px;
   }
 }
-.saree-btn {
+.kurti-btn {
   display: inline-block;
   background: #704638;
   color: white;
@@ -133,6 +133,6 @@
   transition: 0.3s;
 }
 
-.saree-btn:hover {
+.kurti-btn:hover {
   background: #40251d;
 }

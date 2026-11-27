@@ -12,6 +12,7 @@ import BlouseDesigns from "./Pages/BlouseDesigns";
 import EthnicDesigns from "./Pages/EthnicDesigns";
 import SareeDesigns from "./Pages/SareeDesigns";
 import KurtiDesigns from "./Pages/KurtiDesigns";
+import Enquiry from "./Pages/Enquiry";
 
 function Home() {
 
@@ -32,8 +33,11 @@ WELCOME TO VARNIKAA
 Your Style, <br />
 Our <span>Creativity.</span>
 </h1>
+<Link to="/enquiry" className="enquiry-btn">
+  Enquiry Now
+</Link>
 
-<p>
+<p className="p1">
 Discover beautiful ethnic wear, elegant blouse
 designs and perfectly customized outfits.
 Designed with love, stitched with perfection.
@@ -94,9 +98,7 @@ Our Services
 <p>
 Beautiful customized blouse stitching.
 </p>
-
 </Link>
-
 {/* Ethnic Wear */}
 
 
@@ -131,7 +133,7 @@ Beautiful customized blouse stitching.
     className="category-navigation"
   >
     <img
-      src="/Images/EthnicWear5.jpeg"
+      src={sareeImage}
       alt="Saree collection"
     />
 
@@ -146,7 +148,10 @@ Explore beautiful saree styles.
 {/* Kurti Collection */}
 
 <div className="category-card">
-
+  <Link
+      to="/kurti-designs"
+      className="kurti-navigation"
+  >
 <img
               src={kurtiImage}
               alt="Kurti collection"
@@ -158,10 +163,10 @@ Explore beautiful saree styles.
 Stylish outfits for every occasion.
 </p>
 
-</div>
+</Link>
 
 </div>
-
+</div>
 </section>
 
 {/* Services Section */}
@@ -325,6 +330,14 @@ element={<BlouseDesigns />}
   <Route
     path="/saree-designs"
     element={<SareeDesigns />}
+  />
+  <Route
+    path="/kurti-designs"
+    element={<KurtiDesigns />}
+  />
+  <Route 
+  path="/enquiry" 
+  element={<Enquiry />} 
   />
 </Routes>
 

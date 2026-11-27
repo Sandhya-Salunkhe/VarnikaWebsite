@@ -4,7 +4,7 @@ import KurtiGallery from "../Components/KurtiGallery";
 function KurtiDesigns() {
   return (
     <div>
-      <KurtiGallery />
+      <KurtiGallery/>
     </div>
   );
 }

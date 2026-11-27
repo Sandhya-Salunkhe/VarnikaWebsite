@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./KurtiGallery.css";
 
-  const KurtiProducts=[
+  const kurtiProducts=[
     {
       id: 1,
       name: "Simple Lehenga",
       description: "Beautiful and eligent.",
       price:"₹2,499",
-      image: "/Images/EthnicWear1.jpeg"
+      image: "/Images/kurti1.jpeg"
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ import "./KurtiGallery.css";
       category: "Lehenga",
       description: "beautiful traditional lehenga, featuring a rich mustard yellow",
       price:"₹2,499",
-      image: "/Images/EthnicWear2.jpeg"
+      image: "/Images/kurti2.jpeg"
     },
     {
       id: 3,
@@ -23,7 +23,7 @@ import "./KurtiGallery.css";
       category: "Lehenga",
       description: "A gorgeous lehenga Perfect for weddings, receptions",
       price:"₹2,499",
-      image: "/Images/EthnicWear3.jpeg"
+      image: "/Images/kurti3.jpeg"
     },
     {
       id: 4,
@@ -31,7 +31,7 @@ import "./KurtiGallery.css";
       category: "Salwar Suits",
       description: "green straight-cut kurti set featuring delicate embroidery",
       price:"₹2,499",
-      image: "/Images/EthnicWear4.jpeg"
+      image: "/Images/kurti4.jpeg"
     },
     {
       id: 5,
@@ -39,7 +39,7 @@ import "./KurtiGallery.css";
       category: "Punjabi Suits",
       description: "A stunning red Punjabi suit and a beautiful flowy dupatta",
       price:"₹2,499",
-      image: "/Images/EthnicWear5.jpeg"
+      image: "/Images/kurti5.jpeg"
     },
     {
       id: 6,
@@ -47,7 +47,7 @@ import "./KurtiGallery.css";
       category: "Salwar Suits",
       description: "floral printed palazzo pants ,printed dupatta with traditional borders.",
       price:"₹2,499",
-      image: "/Images/EthnicWear6.jpeg"
+      image: "/Images/kurti6.jpeg"
     },
     {
       id: 7,
@@ -55,7 +55,7 @@ import "./KurtiGallery.css";
       category: "Salwar Suits",
       description: "Elegant turquoise suit with printed dupatta and palazzo.",
       price:"₹2,499",
-      image: "/Images/EthnicWear7.jpeg"
+      image: "/Images/kurti7.jpeg"
     },
     {
       id: 8,
@@ -63,7 +63,7 @@ import "./KurtiGallery.css";
       category: "Anarkali Suits",
       description: "Floral embroidered mustard suit with matching dupatta.",
       price:"₹2,499",
-      image: "/Images/EthnicWear8.jpeg"
+      image: "/Images/kurti8.jpeg"
     },
     {
       id: 9,
@@ -71,7 +71,7 @@ import "./KurtiGallery.css";
       category: "Anarkali Suits",
       description: "Elegant floral embroidery with delicate lace detailing.",
       price:"₹2,499",
-      image: "/Images/EthnicWear9.jpeg"
+      image: "/Images/kurti9.jpeg"
     },
     {
       id: 10,
@@ -79,7 +79,7 @@ import "./KurtiGallery.css";
       category: "Salwar Suits",
       description: "Beautiful floral embroidery with matching dupatta.",
       price:"₹2,499",
-      image: "/Images/EthnicWear10.jpeg"
+      image: "/Images/kurti10.jpeg"
     },
     {
       id: 11,
@@ -87,7 +87,7 @@ import "./KurtiGallery.css";
       category: "Salwar Suits",
       description: "Sky blue fabric with floral embroidery.",
       price:"₹2,499",
-      image: "/Images/EthnicWear11.jpeg"
+      image: "/Images/kurti11.jpeg"
     },
     {
       id: 12,
@@ -95,7 +95,7 @@ import "./KurtiGallery.css";
       category: "Anarkali Suits",
       description: "Royal green suit with golden embroidery.",
       price:"₹2,499",
-      image: "/Images/EthnicWear12.jpeg"
+      image: "/Images/kurti12.jpeg"
     },
     {
       id: 13,
@@ -103,7 +103,7 @@ import "./KurtiGallery.css";
       category: "Anarkali Suits",
       description: "Elegant rust outfit with delicate embroidery.",
       price:"₹2,499",
-      image: "/Images/EthnicWear13.jpeg"
+      image: "/Images/kurti13.jpeg"
     },
     {
       id: 14,
@@ -111,7 +111,7 @@ import "./KurtiGallery.css";
       category: "Salwar Suits",
       description: "A gorgeous suit",
       price:"₹2,499",
-      image: "/Images/EthnicWear14.jpeg"
+      image: "/Images/kurti14.jpeg"
     },
     {
       id: 15,
@@ -119,7 +119,7 @@ import "./KurtiGallery.css";
       category: "Salwar Suits",
       description: "Printed mint green suit with matching dupatta.",
       price:"₹2,499",
-      image: "/Images/EthnicWear15.jpeg"
+      image: "/Images/kurti15.jpeg"
     },
     {
       id: 16,
@@ -127,33 +127,49 @@ import "./KurtiGallery.css";
       category: "Salwar Suits",
       description: "Graceful woman wearing a lavender traditional outfit.",
       price:"₹2,499",
-      image: "/Images/EthnicWear16.jpeg"
+      image: "/Images/kurti16.jpeg"
+    },
+    {
+      id: 17,
+      name: "Lavender Elegance",
+      category: "Salwar Suits",
+      description: "Graceful woman wearing a lavender traditional outfit.",
+      price:"₹2,499",
+      image: "/Images/kurti17.jpeg"
+    },
+    {
+      id: 18,
+      name: "Lavender Elegance",
+      category: "Salwar Suits",
+      description: "Graceful woman wearing a lavender traditional outfit.",
+      price:"₹2,499",
+      image: "/Images/kurti18.jpeg"
     }
   ];
   function KurtiGallery(){
     return (
-    <section className="ethnic-gallery" id="ethnic-gallery">
+    <section className="kurti-gallery" id="kurti-gallery">
 
-       <div className="ethnic-heading">
+       <div className="kurti-heading">
         <span>TRADITIONAL COLLECTION</span>
-        <h2>Ethnic Wear Collection</h2>
+        <h2>Kurti Collection</h2>
         <p>
-          Discover beautiful ethnic styles that celebrate
+          Discover beautiful Kurti styles that celebrate
           tradition, elegance and timeless fashion.
         </p>
       </div>
 
-      <div className="ethnic-grid">
-        {ethnicProducts.map((product) => (
-          <div className="ethnic-card" key={product.id}>
+      <div className="kurti-grid">
+        {kurtiProducts.map((product) => (
+          <div className="kurti-card" key={product.id}>
 
-            <div className="ethnic-image">
+            <div className="kurti-image">
               <img
                 src={product.image}
                 alt={product.name}
               />
             </div>
-            <div className="ethnic-info">
+            <div className="kurti-info">
               <h3>{product.name}</h3>
               <p>{product.description}</p>
               <h4>{product.price}</h4>
@@ -161,7 +177,7 @@ import "./KurtiGallery.css";
               <a href={`https://wa.me/918283874680?text=${encodeURIComponent(
                 `Hello, I am interested in ${product.name}. Please share more details.`
                  )}`}
-                className="ethnic-btn"
+                className="kurti-btn"
                  target="_blank"
                 rel="noopener noreferrer"
               >
